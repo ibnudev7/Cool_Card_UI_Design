@@ -1,0 +1,172 @@
+@font-face {
+	font-family: "BernFash";
+	src: url('BernFash.TTF');
+}
+
+body{
+	background: #4B386F;
+	margin-top: 20px;
+
+}
+
+html{
+	overflow: hidden;
+}
+
+.container{
+	width: 95%;
+	margin: auto;
+	background: #4B386F;
+	position: absolute;
+}
+
+.box{
+	width: 300px;
+	height: 600px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.7);
+	display: inline-block;
+	margin-left: 70px;
+	background: #FFFFFF;
+	overflow: hidden;
+	cursor: pointer;
+	transition: 1s;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+.bubble{
+	width: 700px;
+	height: 700px;
+	background: linear-gradient(90deg, #0026ff, #00bfff);
+	margin-top: -450px;
+	margin-left: -200px;
+	transform: rotate(-45deg);
+	position: relative;
+	opacity: 1;
+}
+
+.bubble-2{
+	width: 700px;
+	height: 700px;
+	background: linear-gradient(90deg, #ff0050,#ff0051);
+	margin-top: -1100px;
+	margin-left: -200px;
+	transform: rotate(-45deg);
+	position: relative;
+	opacity: 1;
+	transition: .3s;
+}
+
+.box:hover .bubble-2{
+	width: 700px;
+	height: 700px;
+	background: linear-gradient(90deg, #ff0050,#ff0051);
+	margin-top: -700px;
+	margin-left: -200px;
+	transform: rotate(-45deg);
+	position: relative;
+	opacity: 1;
+}
+
+.box:hover .deskripsi{
+	margin-top: -230px;
+	position: relative;
+	font-family: arial narrow;
+	text-align: center;
+}
+
+.deskripsi{
+	margin-top: 200px;
+	position: relative;
+	font-family: arial narrow;
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+	color: #4F4F4F;
+}
+
+h3{
+	text-decoration: line-through;
+	text-align: center;
+	color: #eeefff;
+}
+
+p{
+	font-family: Arial Narrow;
+	font-size: 20px;
+}
+
+.harga h1{
+	color: #fc9e50;
+	font-size: 50px;
+	font-family: BernFash;
+	margin-top: -20px;
+}
+
+.rp,.bln{
+	color: #eeefff;
+	font-size: 20px;
+}
+
+.rp{
+	margin-right: 150px;
+}
+
+.bln{
+	margin-top: -30px;
+	margin-left: 70px;
+	position: absolute;
+}
+
+button{
+	border: none;
+	outline: none;
+	cursor: pointer;
+	width: 130px;
+	height: 50px;
+	line-height: 50px;
+	margin-top: -10px;
+	background: #ff0050;
+	font-size: 17px;
+	font-family: Arial Narrow;
+	transition: .1s;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.7);
+	color: white;
+	border-radius: 40px;
+}
+
+button:active{
+	border: none;
+	outline: none;
+	cursor: pointer;
+	width: 130px;
+	height: 50px;
+	line-height: 50px;
+	margin-top: -10px;
+	background: #ff0050;
+	font-size: 17px;
+	font-family: Arial Narrow;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.7);
+	color: white;
+}
+
+.desk{
+	margin-top: 100px;
+	position: relative;
+	font-family: Arial Narrow;
+	color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+
+	html{
+		overflow-y: auto;
+	}
+
+	.container{
+		margin-top: 20px;
+		margin-left: -15%;
+	}
+}
